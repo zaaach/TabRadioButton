@@ -10,7 +10,7 @@ TabRadioButton只对 `drawableLeft` 和`drawableTop`方向上的图片做了居�
 
 ![screenshot](https://github.com/zaaach/TabRadioButton/raw/master/art/screen.jpg)
 
-### Download
+## Download
 
 Gradle:
 ```gradle
@@ -27,7 +27,7 @@ or Maven:
 </dependency>
 ```
 
-### How to use
+## How to use
 
 用到`RadioButton`的地方替换成`TabRadioButton` 就可以了，so easy ~ ~ ~
 
@@ -56,9 +56,9 @@ or Maven:
             android:text="@string/now" />
 </RadioGroup>
 ```
-### Try it
+## Try it
 
 :wink:
 
-### 还有红包~
+## 还有红包~
 ![红包](https://github.com/zaaach/CityPicker/blob/city-picker/art/1514356638768.jpg)

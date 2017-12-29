@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TabRadioButton</string>
+    <string name="conversation">消息</string>
+    <string name="contact">联系人</string>
+    <string name="plugin">动态</string>
+    <string name="now">日迹</string>
+</resources>

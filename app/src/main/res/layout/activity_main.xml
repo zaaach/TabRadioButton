@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="系统自带RadioButton：" />
+        <RadioGroup
+            android:id="@+id/rg_android"
+            style="@style/TabRadioGroup">
+            <RadioButton
+                android:id="@+id/rb_conversation"
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_conversation_icon_selector"
+                android:text="@string/conversation" />
+            <RadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_contact_icon_selector"
+                android:text="@string/contact" />
+            <RadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_plugin_icon_selector"
+                android:text="@string/plugin" />
+            <RadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_now_icon_selector"
+                android:text="@string/now" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="TabRadioButton图片在上边：" />
+        <RadioGroup
+            android:id="@+id/rg_top"
+            style="@style/TabRadioGroup">
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_conversation_icon_selector"
+                android:text="@string/conversation" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                android:id="@+id/rb_contact"
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_contact_icon_selector"
+                android:text="@string/contact" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_plugin_icon_selector"
+                android:text="@string/plugin" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableTop="@drawable/tab_now_icon_selector"
+                android:text="@string/now" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="TabRadioButton图片在左边：" />
+        <RadioGroup
+            android:id="@+id/rg_left"
+            style="@style/TabRadioGroup">
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableLeft="@drawable/tab_conversation_icon_selector"
+                android:text="@string/conversation" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableLeft="@drawable/tab_contact_icon_selector"
+                android:text="@string/contact" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                android:id="@+id/rb_plugin"
+                style="@style/TabRadioButtonWithText"
+                android:drawableLeft="@drawable/tab_plugin_icon_selector"
+                android:text="@string/plugin" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonWithText"
+                android:drawableLeft="@drawable/tab_now_icon_selector"
+                android:text="@string/now" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="TabRadioButton只有图片：" />
+        <RadioGroup
+            android:id="@+id/rg_no_text"
+            style="@style/TabRadioGroup">
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_conversation_icon_selector" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_contact_icon_selector" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_plugin_icon_selector" />
+            <com.zaaach.tabradiobutton.TabRadioButton
+                android:id="@+id/rb_now"
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_now_icon_selector" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

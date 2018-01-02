@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabRadioButton">
+        <attr name="trb_enable_animation" format="boolean"/>
+        <attr name="trb_duration" format="integer"/>
+        <attr name="trb_scale_rate" format="float"/>
+        <attr name="trb_drawable_size" format="dimension"/>
+    </declare-styleable>
+</resources>

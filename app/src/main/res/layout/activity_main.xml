@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -42,20 +43,24 @@
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonWithText"
                 android:drawableTop="@drawable/tab_conversation_icon_selector"
-                android:text="@string/conversation" />
+                android:text="@string/conversation"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 android:id="@+id/rb_contact"
                 style="@style/TabRadioButtonWithText"
                 android:drawableTop="@drawable/tab_contact_icon_selector"
-                android:text="@string/contact" />
+                android:text="@string/contact"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonWithText"
                 android:drawableTop="@drawable/tab_plugin_icon_selector"
-                android:text="@string/plugin" />
+                android:text="@string/plugin"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonWithText"
                 android:drawableTop="@drawable/tab_now_icon_selector"
-                android:text="@string/now" />
+                android:text="@string/now"
+                app:trb_enable_animation="true"/>
         </RadioGroup>
 
         <TextView
@@ -67,20 +72,24 @@
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonWithText"
                 android:drawableLeft="@drawable/tab_conversation_icon_selector"
-                android:text="@string/conversation" />
+                android:text="@string/conversation"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonWithText"
                 android:drawableLeft="@drawable/tab_contact_icon_selector"
-                android:text="@string/contact" />
+                android:text="@string/contact"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 android:id="@+id/rb_plugin"
                 style="@style/TabRadioButtonWithText"
                 android:drawableLeft="@drawable/tab_plugin_icon_selector"
-                android:text="@string/plugin" />
+                android:text="@string/plugin"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonWithText"
                 android:drawableLeft="@drawable/tab_now_icon_selector"
-                android:text="@string/now" />
+                android:text="@string/now"
+                app:trb_enable_animation="true"/>
         </RadioGroup>
 
         <TextView
@@ -91,17 +100,57 @@
             style="@style/TabRadioGroup">
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonNoText"
-                android:drawableTop="@drawable/tab_conversation_icon_selector" />
+                android:drawableTop="@drawable/tab_conversation_icon_selector"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonNoText"
-                android:drawableTop="@drawable/tab_contact_icon_selector" />
+                android:drawableTop="@drawable/tab_contact_icon_selector"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 style="@style/TabRadioButtonNoText"
-                android:drawableTop="@drawable/tab_plugin_icon_selector" />
+                android:drawableTop="@drawable/tab_plugin_icon_selector"
+                app:trb_enable_animation="true"/>
             <com.zaaach.tabradiobutton.TabRadioButton
                 android:id="@+id/rb_now"
                 style="@style/TabRadioButtonNoText"
-                android:drawableTop="@drawable/tab_now_icon_selector" />
+                android:drawableTop="@drawable/tab_now_icon_selector"
+                app:trb_enable_animation="true"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="TabRadioButton指定图片大小：" />
+        <RadioGroup
+            android:id="@+id/rg_custom_size"
+            style="@style/TabRadioGroup">
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_conversation_icon_selector"
+                app:trb_enable_animation="true"
+                app:trb_drawable_size="24dp"
+                app:trb_scale_rate="0.8"
+                app:trb_duration="200"/>
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_contact_icon_selector"
+                app:trb_enable_animation="true"
+                app:trb_drawable_size="24dp"
+                app:trb_scale_rate="0.8"
+                app:trb_duration="200"/>
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_plugin_icon_selector"
+                app:trb_enable_animation="true"
+                app:trb_drawable_size="24dp"
+                app:trb_scale_rate="0.8"
+                app:trb_duration="200"/>
+            <com.zaaach.tabradiobutton.TabRadioButton
+                style="@style/TabRadioButtonNoText"
+                android:drawableTop="@drawable/tab_now_icon_selector"
+                app:trb_enable_animation="true"
+                app:trb_drawable_size="24dp"
+                app:trb_scale_rate="0.8"
+                app:trb_duration="200"/>
         </RadioGroup>
 
     </LinearLayout>

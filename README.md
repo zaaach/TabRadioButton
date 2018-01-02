@@ -6,15 +6,19 @@
 
 TabRadioButton只对 `drawableLeft` 和`drawableTop`方向上的图片做了居中处理（这两个方向一般用的比较多）
 
+-   图片和文字居中
+-   可指定drawable的大小
+-   自带缩放动画效果，手指按下和松开时触发（需要开启）
+
 ## Preview
 
-![screenshot](https://github.com/zaaach/TabRadioButton/raw/master/art/screen.jpg)
+<image src="https://github.com/zaaach/TabRadioButton/raw/master/art/screen.gif" style="zoom:60%">
 
 ## Download
 
 Gradle:
 ```gradle
-compile 'com.zaaach:tabradiobutton:1.0.0'
+compile 'com.zaaach:tabradiobutton:1.0.1'
 ```
 
 or Maven:
@@ -22,43 +26,64 @@ or Maven:
 <dependency>
   <groupId>com.zaaach</groupId>
   <artifactId>tabradiobutton</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
 
 ## How to use
 
-用到`RadioButton`的地方替换成`TabRadioButton` 就可以了，so easy ~ ~ ~
-
-添加图片时用`drawableLeft` 和 `drawableTop` 这两个属性！！！
+1.  `TabRadioButton` 添加图片时要用`drawableLeft` 或 `drawableTop` 这两个属性~
+2.  若需要动画效果，添加一行属性 `trb_enable_animation="true"` 即可启用缩放动画效果
 
 ```xml
 <RadioGroup
-     android:id="@+id/rg_top"
      style="@style/TabRadioGroup">
      <com.zaaach.tabradiobutton.TabRadioButton
-     		style="@style/TabRadioButtonWithText"
-     		android:drawableTop="@drawable/tab_conversation_icon_selector"
-     		android:text="@string/conversation" />
-     <com.zaaach.tabradiobutton.TabRadioButton
-          	android:id="@+id/rb_contact"
-            style="@style/TabRadioButtonWithText"
-            android:drawableTop="@drawable/tab_contact_icon_selector"
-            android:text="@string/contact" />
-     <com.zaaach.tabradiobutton.TabRadioButton
-            style="@style/TabRadioButtonWithText"
-            android:drawableTop="@drawable/tab_plugin_icon_selector"
-            android:text="@string/plugin" />
-     <com.zaaach.tabradiobutton.TabRadioButton
-            style="@style/TabRadioButtonWithText"
-            android:drawableTop="@drawable/tab_now_icon_selector"
-            android:text="@string/now" />
+      	style="@style/TabRadioButtonWithText"
+      	android:drawableTop="@drawable/tab_contact_icon_selector"
+      	app:trb_enable_animation="true"
+      	app:trb_drawable_size="24dp"
+      	app:trb_scale_rate="0.8"
+      	app:trb_duration="200"/>
 </RadioGroup>
 ```
+`attrs.xml` 自定义的属性：
+
+```xml
+<declare-styleable name="TabRadioButton">
+  		<!-- 启用动画效果 -->
+        <attr name="trb_enable_animation" format="boolean"/>
+  		<!-- 动画时长 -->
+        <attr name="trb_duration" format="integer"/>
+  		<!-- 缩放比例 -->
+        <attr name="trb_scale_rate" format="float"/>
+  		<!-- drawable大小 -->
+        <attr name="trb_drawable_size" format="dimension"/>
+</declare-styleable>
+```
+
+`@style/TabRadioButtonWithText` 内容如下：
+
+```xml
+<style name="TabRadioButtonWithText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/tab_text_color_selector</item>
+        <item name="android:drawablePadding">2dp</item>
+</style>
+```
+
 ## Try it
 
 :wink:
 
-## 还有红包~
-![红包](https://github.com/zaaach/CityPicker/blob/city-picker/art/1514356638768.jpg)
+## 赞赏
+如果你喜欢 TabRadioButton，感觉 TabRadioButton 帮助到了你，可以点右上角 "Star" 支持一下，谢谢！ ^_^
+你还可以扫描下面的二维码~ 请作者喝一杯咖啡。
+
+![支付宝](https://github.com/zaaach/TabRadioButton/raw/master/art/alipay.jpg)![微信支付](https://github.com/zaaach/TabRadioButton/raw/master/art/wechatpay.jpg)

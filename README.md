@@ -12,7 +12,7 @@ TabRadioButton只对 `drawableLeft` 和`drawableTop`方向上的图片做了居�
 
 ## Preview
 
-<image src="https://github.com/zaaach/TabRadioButton/raw/master/art/screen.gif" style="zoom:60%">
+<image src="https://github.com/zaaach/TabRadioButton/raw/master/art/screen.gif" style="zoom:75%">
 
 ## Download
 
@@ -82,8 +82,8 @@ or Maven:
 
 :wink:
 
-## 赞赏
+# 赞赏
 如果你喜欢 TabRadioButton，感觉 TabRadioButton 帮助到了你，可以点右上角 "Star" 支持一下，谢谢！ ^_^
 你还可以扫描下面的二维码~ 请作者喝一杯咖啡。
 
-![支付宝](https://github.com/zaaach/TabRadioButton/raw/master/art/alipay.jpg)![微信支付](https://github.com/zaaach/TabRadioButton/raw/master/art/wechatpay.jpg)
+![支付宝](https://github.com/zaaach/TabRadioButton/raw/master/art/alipay.png)![微信支付](https://github.com/zaaach/TabRadioButton/raw/master/art/wechatpay.png)

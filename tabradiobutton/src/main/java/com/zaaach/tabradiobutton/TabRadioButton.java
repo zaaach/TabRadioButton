@@ -1,7 +1,6 @@
 package com.zaaach.tabradiobutton;
 
 import android.animation.Animator;
-import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -151,6 +150,8 @@ public class TabRadioButton extends android.support.v7.widget.AppCompatRadioButt
             int top = (int) ((this.getHeight() - drawableHeight - drawablePadding - textHeight) / 2);
             topDrawable.setBounds(0, top, drawableWidth, top + drawableHeight);
         }
+        //指定drawable显示的大小
+        setCompoundDrawables(leftDrawable, topDrawable, rightDrawable, bottomDrawable);
         super.onDraw(canvas);
     }
 

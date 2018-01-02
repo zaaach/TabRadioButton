@@ -18,7 +18,7 @@ TabRadioButton只对 `drawableLeft` 和`drawableTop`方向上的图片做了居�
 
 Gradle:
 ```gradle
-compile 'com.zaaach:tabradiobutton:1.0.1'
+compile 'com.zaaach:tabradiobutton:1.0.2'
 ```
 
 or Maven:
@@ -26,7 +26,7 @@ or Maven:
 <dependency>
   <groupId>com.zaaach</groupId>
   <artifactId>tabradiobutton</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ```
